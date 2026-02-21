@@ -19,5 +19,8 @@ button.addEventListener("click", () => {
 
     resultElement.innerText = `You are ${Math.floor(age.years)} years, ${Math.floor(age.months)} months, and ${Math.floor(age.days)} days old.`;
 
+    const diffInMillis = now.toMillis() - birthDate.toMillis();
+    console.log(`Age in milliseconds: ${diffInMillis}`);
 });
+
 
